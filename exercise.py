@@ -3,9 +3,17 @@ def special_services():
     age = int(input("What is your age?"))
     if age < 12:
         print("You get a discount")
-    if age >= 65:
+    elif age >= 65:
         print("You get a discount")
-    member = bool(input("You have a member card"))
-    if member == True:
-        print("You get a discount")
-     
+    else:
+        member = input("You have a member card")
+        if member == "True" or "Yes" or "yes":
+            print("You get a discount")
+        else:
+            resident = input("Do you live around here")
+            if resident == "True" or "Yes" or "yes":
+                print("You get a discount")
+
+
+    
+special_services()
