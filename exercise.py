@@ -7,13 +7,17 @@ def special_services():
         print("You get a discount")
     else:
         member = input("You have a member card")
-        if member == "True" or "Yes" or "yes":
+        uppercase_member = member.upper()
+        if uppercase_member == "YES":
             print("You get a discount")
         else:
             resident = input("Do you live around here")
-            if resident == "True" or "Yes" or "yes":
+            uppercase_resident = resident.upper()
+            if uppercase_resident == "YES":
                 print("You get a discount")
+            else:
+                print("No Discount")
 
 
     
-special_services()
+special_services()                      

@@ -5,5 +5,5 @@ def evenorodd():
         print("even")
     
     if x % 2 == 1:
-        print("even")
+        print("odd")
 evenorodd()
