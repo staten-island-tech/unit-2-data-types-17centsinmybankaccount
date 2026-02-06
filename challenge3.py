@@ -1,6 +1,5 @@
-def factor(x):
-    for i in(1,x+1):
-        if x % i == 0:
+def factor(num = int(input("give me an number to factor"))):
+    for i in range(1,num+1):
+        if num % i == 0:
             print(i)
-x= int(input(""))
-factor(x)
+factor()
