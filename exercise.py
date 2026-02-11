@@ -1,10 +1,9 @@
 '''under 12,greater than 65,resident,member'''
 def special_services():
     age = int(input("What is your age?"))
-    if age < 12:
+    if age < 12 or age >= 65:
         print("You get a discount")
-    elif age >= 65:
-        print("You get a discount")
+
     else:
         member = input("You have a member card")
         uppercase_member = member.upper()
